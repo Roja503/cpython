@@ -1,4 +1,14 @@
-#
+n=input()
+a=""
+l=[]
+for i in n:
+    if i not in a:
+        a=a+i
+    else:
+        l.append(len(a))
+        a=""
+        a=a+i
+print(max(l))#
 # turtle.py: a Tkinter based turtle graphics module for Python
 # Version 1.1b - 4. 5. 2009
 #
